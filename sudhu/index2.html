@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Education Hub</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+            background: #3700ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            min-height: 650px;
+            background: violet;
+            padding: 45px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Top title */
+        .header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .header h1 {
+            color: white;
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        .header p {
+            color: white;
+            font-size: 18px;
+        }
+
+        /* Small badge */
+        .badge {
+            display: inline-block;
+            background: #f5dda0;
+            color: #333;
+            padding: 22px 35px;
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Website cards */
+        .websites {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            align-items: center;
+        }
+
+        .card {
+            min-height: 170px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            text-decoration: none;
+            color: #333;
+
+            border-radius: 25px;
+            padding: 30px;
+
+            transition: 0.3s ease;
+
+            box-shadow: 0 7px 15px rgba(0, 0, 0, 0.12);
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h2 {
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        /* Pink cards */
+        .pink {
+            background: #f28bb5;
+        }
+
+        /* Green card */
+        .green {
+            background: #8ee28d;
+        }
+
+        /* Yellow card */
+        .yellow {
+            background: #f5dda0;
+        }
+
+        /* Bottom card */
+        .bottom-card {
+            grid-column: 2;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 800px) {
+            .container {
+                padding: 25px;
+            }
+
+            .websites {
+                grid-template-columns: 1fr;
+            }
+
+            .bottom-card {
+                grid-column: auto;
+            }
+
+            .header h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <img 
+        src=""C:\Users\Lenovo\Documents\WhatsApp Image 2026-09-28 at 9.45.33 AM.jpeg""
+        alt="Sudhanva DH"
+        class="profile-photo"
+    >
+
+            <div class="badge">
+                🎓 My Education Hub
+            </div>
+
+            <h1>Sudhanva DH</h1>
+
+            <p>
+                Small description about my self
+            </p>
+
+        </div>
+
+
+        <!-- Website Cards -->
+        <div class="websites">
+
+            <!-- SCHOOL -->
+            <a
+                href="https://www.justdial.com/Chitradurga/B-L-R-High-School-Sirigere/9999P8194-8194-240612054426-W4P7_BZDET"
+                target="_blank"
+                class="card pink"
+            >
+                <div>
+                    <h2>🏫 School</h2>
+                    <p>
+                        Visit my school website
+                    </p>
+                </div>
+            </a>
+
+
+            <!-- COLLEGE -->
+            <a
+                href="http://www.mbpucollege.com/"
+                target="_blank"
+                class="card pink"
+            >
+                <div>
+                    <h2>🎓 College</h2>
+                    <p>
+                        Visit my college website
+                    </p>
+                </div>
+            </a>
+
+
+            <!-- ENGINEERING COLLEGE -->
+            <a
+                href="https://nie.ac.in/"
+                target="_blank"
+                class="card pink"
+            >
+                <div>
+                    <h2>💻 Engineering College</h2>
+                    <p>
+                        Visit my current engineering college
+                    </p>
+                </div>
+            </a>
+
+
+            <!-- EXTRA WEBSITE -->
+            <a
+                href="https://www.google.com"
+                target="_blank"
+                class="card green bottom-card"
+            >
+                <div>
+                    <h2>my achievements</h2>
+                    <p>.
+                        Actively participated in academic and extracurricular activities, developing leadership and teamwork skills.
+                        Continuously worked on improving my knowledge, skills, and personal growth.   
+                    </p>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
